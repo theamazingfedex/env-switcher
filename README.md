@@ -26,7 +26,7 @@ For v1(current) you will need to copy `envSwitcher.js` into your graphql-reposit
 # 
 
 ## .env file format:
- #### _Each environment in your .env file needs to be formatted in a specific way in order for this tool to work correctly._
+#### _Each environment in your .env file needs to be formatted in a specific way in order for this tool to work correctly._
 
  `# #` - two pound signs with a space between them denotes a row which should be ignored by this script (no commenting/uncommenting).
 
@@ -45,11 +45,11 @@ For v1(current) you will need to copy `envSwitcher.js` into your graphql-reposit
  `# # PROD BEGIN` - two pound signs with a space between them, followed by 'PROD BEGIN' in ALL CAPS denotes the beginning of the LOCAL env section.
  `# # PROD END` - two pound signs with a space between them, followed  by 'PROD END' in ALL CAPS denotes the end of the LOCAL env section.
  
- # 
+# 
 
- ## Example `.env` file:
-
- ````
+## Example `.env` file:
+# 
+````
  # # LOCAL BEGIN
  # # these are the local env vars (double up on comments, with a space between them and the line will remain unchanged)
  # DB_HOST=host.docker.internal # this line will become uncommented once `node envSwitcher.js ./.env local` is executed
