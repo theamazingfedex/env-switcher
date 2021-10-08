@@ -1,5 +1,5 @@
 
-# Environment Variable Switcher by Daniel Wood 2021
+# Environment Variable Switcher
 
 ## Usage:
 `node envSwitcher.js {pathToEnvFile} {targetEnv}`
