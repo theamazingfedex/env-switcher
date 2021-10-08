@@ -7,21 +7,21 @@
 For v1(current) you will need to copy `envSwitcher.js` into your graphql-repository's `root/scripts` folder then for convenience, add script entries to the graphql-repository's `package.json`
 
 ### Examples:
- ```
+``` bash
  node envSwitcher.js ./.env local
  node envSwitcher.js ./.env dev
  node envSwitcher.js ./.env QA
  node envSwitcher.js ./.env sTAgE
- ```
+```
 
 #### Scripts for `package.json`:
- ```
+``` json
  "env:local": "node ./scripts/envSwitcher.js ./.env local",
  "env:dev": "node ./scripts/envSwitcher.js ./.env dev",
  "env:qa": "node ./scripts/envSwitcher.js ./.env qa",
  "env:stage": "node ./scripts/envSwitcher.js ./.env stage",
  "env:prod": "node ./scripts/envSwitcher.js ./.env prod",
- ```
+```
 
 # 
 
@@ -49,7 +49,7 @@ For v1(current) you will need to copy `envSwitcher.js` into your graphql-reposit
 
 ## Example `.env` file:
 # 
-````
+```` bash
  # # LOCAL BEGIN
  # # these are the local env vars (double up on comments, with a space between them and the line will remain unchanged)
  # DB_HOST=host.docker.internal # this line will become uncommented once `node envSwitcher.js ./.env local` is executed
